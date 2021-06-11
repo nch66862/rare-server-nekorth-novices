@@ -1,0 +1,110 @@
+[
+{
+    "model": "auth.user",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$bcjEkV2UVukXd6960agiSv$mB8juZ81BaKsn6nn9gUnCvPNexfzsAAEtpAMoOfurCE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "nickcarver",
+        "first_name": "Nicky",
+        "last_name": "Carver",
+        "email": "nickcarver@email.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-05-21T19:42:19.785Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$YI1UHasqtNvB2gUgLQGjXF$rImKlU54qfLKU0U+uPpL/2FmmPRDJLSXo0NSWCjOFsg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jakefroeb",
+        "first_name": "Jake",
+        "last_name": "Froeb",
+        "email": "jakefroeb@email.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-05-21T19:44:06.424Z",
+        "groups": [],
+        "user_permissions": [
+            33,
+            34,
+            35,
+            46,
+            48,
+            57,
+            58,
+            59,
+            49,
+            50,
+            51
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 17,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$pnNmuIo53ru1swaNmR1WC6$ZzmF0UGnp1AzvMqdebOOgOirZGXadhvU1qRsucPe2iU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "kaitlinkelley",
+        "first_name": "Kaitlin",
+        "last_name": "Kelley",
+        "email": "kaitlinkelley@email.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-05-21T19:45:01.781Z",
+        "groups": [],
+        "user_permissions": [
+            33,
+            34,
+            35,
+            46,
+            48,
+            57,
+            58,
+            59,
+            49,
+            50,
+            51
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 18,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$FJvi5g702OpyYnyKDSucqI$pUlsAPwZ3L/20PCOcT/xgM9cGiYcOKBdP7FwpDYQQRE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "adamsheaffer",
+        "first_name": "Adam",
+        "last_name": "Sheaffer",
+        "email": "adam@email.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-05-21T20:41:40.773Z",
+        "groups": [],
+        "user_permissions": [
+            33,
+            34,
+            35,
+            46,
+            48,
+            57,
+            58,
+            59,
+            49,
+            50,
+            51
+        ]
+    }
+}
+]

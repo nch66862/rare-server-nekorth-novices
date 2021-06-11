@@ -1,0 +1,16 @@
+[
+{
+    "model": "rareapi.category",
+    "pk": 1,
+    "fields": {
+        "label": "Django"
+    }
+},
+{
+    "model": "rareapi.category",
+    "pk": 2,
+    "fields": {
+        "label": "Java👍"
+    }
+}
+]
