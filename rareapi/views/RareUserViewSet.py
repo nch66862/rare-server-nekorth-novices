@@ -39,6 +39,15 @@ class RareUserViewSet(ViewSet):
         rareuser.user.save()
         rareuser.save()
         return Response({}, status=status.HTTP_204_NO_CONTENT)
+    def destroy(self, request, pk):
+        if not request.auth.user.has_perm('rareapi.delete_rareuser'):
+            raise PermissionDenied()
+        try:
+            rareuser = RareUser.objects.get(pk=pk)
+            rareuser.delete()
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
+        except Exception:
+            return HttpResponse(Exception)
     @action(detail=False)
     def inactive(self, request):
         if not request.auth.user.has_perm('rareapi.view_rareuser'):
