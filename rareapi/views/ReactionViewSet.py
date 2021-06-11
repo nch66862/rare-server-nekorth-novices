@@ -38,6 +38,18 @@ class ReactionViewSet(ViewSet):
 
         return Response(serializer.data)
 
+    def destroy(self, request, pk=None):
+        # TODO: admin-only endpoint
+        if not request.auth.user.has_perm('rareapi.delete_reaction'):
+            raise PermissionDenied()
+        try:
+            reaction = Reaction.objects.get(pk=pk)
+            reaction.delete()
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
+        except Exception:
+            return HttpResponse(Exception)
+
+
 class ReactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reaction
